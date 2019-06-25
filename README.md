@@ -28,16 +28,17 @@ II. Cumulocity account with at least 1 registered IoT device
 
 <img width="276" alt="addaws" src="https://user-images.githubusercontent.com/52167245/60110204-b78e5800-9739-11e9-929d-378a9203ab67.PNG">
 
-5. From the mapping screen we will now enter the S3 bucket that you want files uploaded into. We can now also customize the Cumulocity Data we want to recieve and store ina  file for each alarm. In the Example below for the File name I used the Id + _@ + time + .txt (example file name : 37417_@2018-12-18T06:54:20.007Z.txt). In the Raw Data field I added the entire Trigger Data. Click the "Next" button and Test your configured Data. When test has passed click the "Done" button.
+5. From the mapping screen we will now enter the S3 bucket that you want files uploaded into. We can now also customize the Cumulocity Data we want to recieve and store in a file for each alarm. In the Example below for the File name I used the Id + _@_ + time + .txt (example file name : 37417_@_2018-12-18T06:54:20.007Z.txt). In the Raw Data field I added the string of information and made the content type as "text/plain" . Click the "Next" button and Test your configured Data. When test has passed click the "Done" button.
 
-<img width="476" alt="mapping" src="https://user-images.githubusercontent.com/52167245/60111059-38018880-973b-11e9-8e96-ccd64aa35e1a.PNG">
+<img width="471" alt="mapping" src="https://user-images.githubusercontent.com/52167245/60119323-28d70680-974c-11e9-877e-55eb4e80a837.PNG">
 
 6. It is very important to remeber to save your workflow in order to start executing the workflow!
 
 <img width="130" alt="save" src="https://user-images.githubusercontent.com/52167245/60111517-12c14a00-973c-11e9-8dfd-21272ca28b2b.PNG">
 
-7. To test the Flow trigger an alarm from your device, you will see the workflow execute and save the file into your specified S3 bucket.
+7. To test the workflow, trigger an alarm from your device, you will see the workflow execute and save the file into your specified S3 bucket.
 
+<img width="796" alt="awsS3" src="https://user-images.githubusercontent.com/52167245/60119471-8703e980-974c-11e9-810d-d9d174527b35.PNG">
 
 
 
